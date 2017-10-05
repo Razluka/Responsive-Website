@@ -460,6 +460,12 @@ img {
   margin: 0 auto;
 }
 
+.unstyle-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin: 0 0 .75em;
 }
@@ -502,6 +508,39 @@ h2 {
   display: flex;
 }
 
+.main-nav {
+  background: #d31869;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.main-nav li {
+  background: lightblue;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
 .hero {
   background: -webkit-gradient(linear, left top, right top, from(#048ca8), to(#16db93));
   background: -webkit-linear-gradient(left, #048ca8, #16db93);
@@ -519,19 +558,16 @@ h2 {
 
 .main-header {
   position: absolute;
-  top: 1em;
+  top: 0;
   left: 0;
   right: 0;
+  padding-top: 1em;
 }
 
 .logo {
   width: 25%;
   min-width: 10rem;
   max-width: 15rem;
-}
-
-.main-nav {
-  display: none;
 }
 
 .btn {
